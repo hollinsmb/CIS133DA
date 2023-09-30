@@ -1,0 +1,7 @@
+* { font-style: serif; font-size: 16px; }
+h1 { background-color: rgb(75, 133, 94); color: rgb(33, 87, 51); font-size: 36px; text-align: center;}
+h2 { font-style: sans-serif; color: rgb(33, 87, 51); font-size: 24px;}
+h3 { font-style: sans-serif; color: rgb(33, 87, 51); font-size: 20px;}
+hr { border: 3px solid rgb(33, 87, 51); }  
+#centered { text-align: center;}
+ul { list-style-type: square; }
