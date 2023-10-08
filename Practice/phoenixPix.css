@@ -1,0 +1,26 @@
+img{
+    border: 1px;
+    border-style: dotted;
+    border-color: black;
+    width: 500px;
+    height: 300px;
+}
+iframe{
+    width: 500px;
+    height: 300px;
+    border-style: dotted;
+    border-color: black;
+    border: 1px;
+}
+.image1{
+    filter:grayscale(80);
+}
+.image2{
+    filter: hue-rotate(-60deg);
+}
+.image3{
+    filter:invert(50);
+}
+.image4{
+    filter:sepia(30);
+}
