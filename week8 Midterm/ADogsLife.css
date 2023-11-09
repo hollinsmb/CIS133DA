@@ -1,0 +1,84 @@
+*{ box-sizing: border-box; 
+}
+body { 
+    background-color: #EAD688;
+    font-family: Verdana, Arial, sans-serif; 
+}
+#wrapper { 
+    margin: 0 auto; width: 80%; min-width: 940px;
+    background-color:#C8CE2E; color: #67791E; 
+}
+header { 
+    background-color: #A3A21C; color: #EAD688;
+    font-size: 150%; padding: 10px 10px 10px 180px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-image: url(./images/logo.jpeg);
+}
+nav { 
+    float: left; width: 150px; font-weight: bold;
+    letter-spacing: 0.1em; 
+}
+nav ul { list-style-type: none; margin: 0; padding: 0; 
+}
+nav a { 
+    text-decoration: none; 
+    padding: 20px; 
+    display: block;
+    background-color: #C8CE2E;
+    border-bottom: 1px solid #FFFFFF; 
+}
+nav a:link { color: #FFFFFF; 
+}
+nav a:visited { color: #EAEAEA; 
+}
+nav a:hover { color: #C8CE2E; background-color: #EAEAEA; 
+}
+main { 
+    background-color: #FFFFFF; color: #000000;
+    padding: 10px 20px; overflow: auto; display: block; 
+}
+footer { 
+    font-size: 70%; text-align: center; padding: 10px;
+    background-color: #A3A21C; color: #EAD688 ;clear: both; 
+}
+h2 { 
+    color: #C8CE2E;
+    font-family: Arial, sans-serif; }
+    #floatright { float: right; margin: 10px; 
+}
+#indexph {
+    margin-left: 150px;
+    height: 300px;
+    background-image: url(./images/indexph.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+}
+#servicesph {
+    margin-left: 150px;
+    height: 300px;
+    background-image: url(./images/serviceph1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+}
+#directionsph {
+    margin-left: 150px;
+    height: 300px;
+    background-image: url(./images/serviceph.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+}
+#contactph {
+    margin-left: 150px;
+    height: 300px;
+    background-image: url(./images/petadviceph.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+}
+#adviceph {
+    margin-left: 150px;
+    height: 300px;
+    background-image: url(./images/petadviceph1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+}
