@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table { 
+            border-collapse: collaspe;
+            border-spacing: 0; 
+        }
+        th {
+            text-align: center;
+            background-color: darkgreen;
+            color: white;
+            padding: 10px;
+        }
+        tbody tr:nth-child(even) { 
+            background-color: lightgreen;
+        }
+        tbody td { height: 30px; padding: 3px;}
+        td:nth-child(2),
+        td:nth-child(3) {
+            text-align: right;
+        }
+    </style>
+    <title>Grades</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th id="title" colspan="3">My CIS 133DA Grades</th>
+            </tr>
+            <tr>
+                <th id="Week #=">Week #</th>
+                <th id="Possible">Pts Possible</th>
+                <th id="Actual">Pts Actual</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="Week #">Week 1</td>
+                <td id="Possible">70</td>
+                <td id="Actual">65</td>
+            </tr>
+            <tr>
+                <td id="Week #">Week 2</td>
+                <td id="Possible">80</td>
+                <td id="Actual">68</td>
+            </tr>
+            <tr>
+                <td id="Week #">Week 3</td>
+                <td id="Possible">40</td>
+                <td id="Actual">34</td>
+            </tr>
+            <tr>
+                <td id="Week #">Week 4</td>
+                <td id="Possible">40</td>
+                <td id="Actual">36</td>
+            </tr>
+            <tr>
+                <td id="Week #">Week 5</td>
+                <td id="Possible">40</td>
+                <td id="Actual">31</td>
+            </tr>
+            <tr>
+                <td id="Week #">Week 6</td>
+                <td id="Possible">40</td>
+                <td id="Actual">29</td>
+            </tr>
+            <tr>
+                <td id="Week #">Week 7</td>
+                <td id="Possible">40</td>
+                <td id="Actual">37</td>
+            </tr>
+            <tr>
+                <td id="Week #">Week 8</td>
+                <td id="Possible">100</td>
+                <td id="Actual">91</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th id="Week #">Total</th>
+                <th id="Possible">450</th>
+                <th id="Actual">391</th>
+            </tr>
+            <th id="foot" colspan="3">Letter Grade: B (86%)</th>
+        </tfoot>
+    </table>
+</body>
+</html>

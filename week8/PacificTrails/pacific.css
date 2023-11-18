@@ -19,7 +19,7 @@ header {
 nav { 
     font-size: 1.2em;
     text-align: center;
-    background-color: #FFF;
+    background-color: #FFFFFF;
 }
 
 nav a { 
@@ -57,7 +57,7 @@ main { display: block;
 }
 
 footer { 
-    background-color: #FFF;
+    background-color: #FFFFFF;
     font-size: .70em;
     font-style: italic;
     padding: 1em;
@@ -98,3 +98,37 @@ h3 {
 #wrapper { 
     background-color: #FFFFFF;
 }
+@media (min-width: 600px) {
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      padding: 2em; 
+    }
+    .navigation li {
+      border: none;
+      width: 12em; 
+    }
+    h1 {
+      font-size: 2em; 
+      letter-spacing: 0.25em; }
+    #homehero {
+        background-size: 100% 100%;
+    }
+  }
+@media (min-width: 1024px) {
+    body {
+      background: linear-gradient(to bottom, white 20%, lightblue 60%, white 100%);
+    }
+    .navigation {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    #wrapper {
+      width: 80%;
+      margin-left: 10%; 
+      margin-right: 10%;
+    }
+  }
+    
