@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,8 +42,8 @@
             </tr>
             <tr>
                 <td colspan="2" style="text-align:right;"">
-                    <input type="button" value="Cancel" onclick="cancelTicket()" />
-                    <input type="button" value="Print Ticket" onclick="printTicket()" />
+                    <input type=" button" value="Cancel" onclick="cancelTicket()" />
+                <input type="button" value="Print Ticket" onclick="printTicket()" />
                 </td>
             </tr>
         </table>
@@ -75,7 +76,33 @@
     function cancelTicket() {
         window.close();
     }
+    function printTicket() {
 
+        var amigoName = document.getElementById('amigo_name').value;
+
+        var amigoType = document.getElementById('amigo_type').value;
+
+        var amigoSizeOptions = document.getElementsByName('amigo_size').value;
+
+        var amigoSize;
+        for (var i = 0; i < amigoSizeOptions.length; i++) {
+            if (amigoSizeOptions[i].checked) {
+                amigoSize = amigoSizeOptions[i].value;
+                break;
+            }
+        }
+
+        document.getElementById('amigoName').innerText = amigoName;
+
+        var imgSrc = `./images/${amigoType}-${amigoSize}.jpg`;
+        document.getElementById('amigoPicture').src = imgSrc;
+
+        document.getElementById('amigoPicture').style.height = '150px';
+
+        document.getElementById('form').style.display = 'none';
+
+        alert('Your ticket is ready to be printed!');
+    }
 </script>
 
 </html>
