@@ -2,6 +2,13 @@ body {
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 75px 1fr 50px;
+    grid-template-areas:
+        "hdr hdr"
+        "aside main"
+        "ftr ftr";
 }
 
 header, aside, main, footer {
@@ -11,23 +18,33 @@ header, aside, main, footer {
 
 header {
     color: white;
-    background-color: rgb(33,87,51);
+    background-color: rgb(33, 87, 51);
+    grid-area: hdr;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 aside {
-    background-color: rgb(75,133,94);
+    background-color: rgb(75, 133, 94);
+    grid-area: aside;
 }
 
 main {
+    grid-area: main;
 }
 
 footer {
     color: white;
-    background-color: rgb(53,112,72);
+    background-color: rgb(53, 112, 72);
+    grid-area: ftr;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 h1 {
-    color: rgb(33,87,51);
+    color: rgb(33, 87, 51);
 }
 
 p {
@@ -35,9 +52,13 @@ p {
 }
 
 .restName {
-    background-color: rgb(33,87,51);
+    background-color: rgb(33, 87, 51);
     color: white;
     font-style: italic;
     padding: 5px;
     border-radius: 3px;
+}
+
+header div, footer div {
+    margin: 0px 20px;
 }

@@ -7,6 +7,13 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 75px 1fr 50px;
+    grid-template-areas:
+        "hdr hdr"
+        "aside main"
+        "ftr ftr";
 }
 
 header, aside, main, footer {
@@ -17,10 +24,15 @@ header, aside, main, footer {
 header {
     color: white;
     background-color: blue;
+    grid-area: hdr;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 aside {
     background-color: yellow;
+    grid-area: aside;
 }
 
 aside > img {
@@ -28,11 +40,16 @@ aside > img {
 }
 
 main {
+    grid-area: main;
 }
 
 footer {
     color: white;
     background-color: blue;
+    grid-area: ftr;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 header, footer {
@@ -61,3 +78,16 @@ p {
     width: 180px;
     height: 180px;
 }
+#gallery { display: grid; 
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: auto;
+    grid-gap: 2em;	
+    gap: 2em;
+    justify-content: center;		 
+}
+#gallery img {
+    max-width: 100%;
+    height: auto; 
+    border: 8px solid lightblue;
+    margin: 10px;
+  }
