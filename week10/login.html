@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    table {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="#" method="post">
+    <table>
+      <tr>
+        <td>Username:</td>
+        <td><input type="text" name="username" id="username" autofocus maxlength="20" required tabindex="1" placeholder="Enter your username"></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password" id="password" maxlength="20" required tabindex="2" placeholder="Enter your password"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="reset" value="Reset" tabindex="3">
+          <input type="submit" value="Submit" tabindex="4">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>

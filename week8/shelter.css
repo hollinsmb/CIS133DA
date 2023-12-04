@@ -72,22 +72,12 @@ p {
     background-color: lightblue;
     height: 200px;
     width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .amigo_div > img {
     width: 180px;
     height: 180px;
 }
-#gallery { display: grid; 
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: auto;
-    grid-gap: 2em;	
-    gap: 2em;
-    justify-content: center;		 
-}
-#gallery img {
-    max-width: 100%;
-    height: auto; 
-    border: 8px solid lightblue;
-    margin: 10px;
-  }
